@@ -1,1 +1,1 @@
-# zephyr_zest-radio-wifi
+# zephyr_zest-radio-lora868
