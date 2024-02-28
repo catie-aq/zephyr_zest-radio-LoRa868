@@ -1,0 +1,23 @@
+/*
+ * Copyright (c) 2024 CATIE
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+ 
+ / {
+	aliases {
+		lora0 = &lora;
+	};
+};
+
+&sixtron_spi {
+	status = "okay";
+	lora: sx1262@0 {
+		compatible = "semtech,sx1262";
+		reg = <0>;
+		reset-gpios = <&sixtron_connector_1 DIO7 GPIO_ACTIVE_LOW>;
+		dio1-gpios = <&sixtron_connector_1 DIO4 GPIO_OPEN_DRAIN>;
+		busy-gpios = <&sixtron_connector_1 DIO2 GPIO_OPEN_DRAIN>;
+		spi-max-frequency = <DT_FREQ_M(8)>;
+	};
+};
