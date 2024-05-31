@@ -1,1 +1,3 @@
-# zephyr_zest-radio-lora868
+# Zest_Radio_LoRa868
+
+Zest_Radio_LoRa868 board for Zephyr OS.
