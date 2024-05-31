@@ -3,8 +3,8 @@
  *
  * SPDX-License-Identifier: Apache-2.0
  */
- 
- / {
+
+/ {
 	aliases {
 		lora0 = &lora;
 	};
