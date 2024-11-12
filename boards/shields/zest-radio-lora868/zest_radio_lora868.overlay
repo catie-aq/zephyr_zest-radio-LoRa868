@@ -6,13 +6,13 @@
 
 / {
 	aliases {
-		lora0 = &lora;
+		lora0 = &sx1262_zest_radio_lora868;
 	};
 };
 
 &sixtron_spi {
 	status = "okay";
-	lora: sx1262@0 {
+	sx1262_zest_radio_lora868: sx1262@0 {
 		compatible = "semtech,sx1262";
 		reg = <0>;
 		reset-gpios = <&sixtron_connector_1 DIO7 GPIO_ACTIVE_LOW>;
